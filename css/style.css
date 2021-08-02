@@ -55,48 +55,73 @@ li.price {
   text-decoration: line-through;
 }
 
-.container p {
+.container1 {
+  margin: 80px 120px 0 120px;
+}
+
+.container1 p {
   font-size: 35px;
   font-family: sans-serif;
 }
 
-.container .box p {
+.container1 .box p {
   font-size: 16px;
   color: #ff3d3d;
   margin-top: 40px;
 }
 
-.container .box .title h1 {
+.container1 .box .title h1 {
   font-size: 26px;
   color: #d64545;
 }
 
-.container .box .title h2 {
+.container1 .box .title h2 {
   font-size: 24px;
   font-weight: normal;
 }
 
-.container .box .select .form-select {
+.container1 .box .select .form-select {
   height: 55px;
 }
 
-.container .box .select .col-4 p {
+.container1 .box .select .col-4 p {
   font-size: 18px;
   color: gray;
 }
 
-.container .box .select .col-2 p {
+.container1 .box .select .col-2 p {
   font-size: 18px;
   color: gray;
 }
 
-.container .box .sum h1 {
+.container1 .box .sum h1 {
   font-size: 35px;
   font-family: sans-serif;
 }
 
-.container .box .sum h2 {
+.container1 .box .sum h2 {
   font-size: 22px;
+}
+
+.box-sum {
+  background-color: rgba(230, 224, 224, 0.507);
+}
+
+.box-sum h1 {
+  font-size: 35px;
+  font-family: sans-serif;
+}
+
+.box-sum .subtotal {
+  margin-top: 40px;
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+.box-sum .total {
+  margin-top: 100px;
+  font-family: sans-serif;
+  font-size: 18px;
 }
 
 @media only screen and (max-width: 768px) {
