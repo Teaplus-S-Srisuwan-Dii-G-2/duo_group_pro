@@ -1,94 +1,141 @@
 .card-img-top {
-    height: 300px;
-    width: 270px;
+  height: 300px;
+  width: 270px;
 }
 
 .row {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 //dev-doom work
 img.carouselimg {
-    height: 675px;
-    width: 100%;
+  height: 675px;
+  width: 100%;
 }
 
 p.sideH {
-    margin-bottom: 7rem;
+  margin-bottom: 7rem;
 }
 
-div.slide{
-    margin-bottom: 5rem;
+div.slide {
+  margin-bottom: 5rem;
 }
 //dev-doom work
 header {
-    .h-100 {
-        height: auto;
-    }
-    .xx{
-        background-color: rgb(27, 27, 27);
-    }
+  .h-100 {
+    height: auto;
+  }
+  .xx {
+    background-color: rgb(27, 27, 27);
+  }
 }
 
 .logo {
-    margin: 0 20px 0 20px;
-    width: 50px;
-    height: 50px;
-    background: url(/img/logo.png);
+  margin: 0 20px 0 20px;
+  width: 50px;
+  height: 50px;
+  background: url(/img/logo.png);
 }
 
 .Rectanggle {
-    left: 10%;
-    margin: 0 20px 0 20px;
+  left: 10%;
+  margin: 0 20px 0 20px;
 }
 
 .bag {
-    position: absolute;
-    width: 16.13px;
-    left: 85%;
+  position: absolute;
+  width: 16.13px;
+  left: 85%;
 }
 
 li {
-    display: inline;
-    margin-right: 10px;
+  display: inline;
+  margin-right: 10px;
 }
 
 li.price {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
-@media only screen and (max-width: 768px){
-    //Dew
 
-   
-    header {
-       
-        .xx{
-            background-color: rgb(253, 253, 253);
+.container {
+  p {
+    font-size: 35px;
+    font-family: sans-serif;
+  }
+  .box {
+    p {
+      font-size: 16px;
+      color: rgb(255, 61, 61);
+      margin-top: 40px;
+    }
+    .title {
+      h1 {
+        font-size: 26px;
+        color: rgb(214, 69, 69);
+      }
+      h2 {
+        font-size: 24px;
+        font-weight: normal;
+      }
+    }
+    .select {
+        .form-select {
+            height: 55px;
+        }
+      .col-4 {
+        p {
+          font-size: 18px;
+          color: gray;
+        }
+      }
+      .col-2 {
+        p {
+          font-size: 18px;
+          color: gray;
+        }
+      }
+    }
+    .sum {
+        h1 {
+            font-size: 35px;
+    font-family: sans-serif;
+        }
+        h2 {
+            font-size: 22px;
         }
     }
+  }
+}
+@media only screen and (max-width: 768px) {
+  //Dew
 
-    ul{
-        visibility:hidden;
+  header {
+    .xx {
+      background-color: rgb(253, 253, 253);
+    }
+  }
 
-    }
-    .logo,.Rectanggle{
-        visibility:hidden;
-    }
-    .bag .cv{
-color: black;
-    }
+  ul {
+    visibility: hidden;
+  }
+  .logo,
+  .Rectanggle {
+    visibility: hidden;
+  }
+  .bag .cv {
+    color: black;
+  }
 
-    //Doom
-    img.carouselimg {
-        height: 496px;
-        width: 100%;
-    }
+  //Doom
+  img.carouselimg {
+    height: 496px;
+    width: 100%;
+  }
 
-    //Frist
+  //Frist
 
-    .col{
-        margin-left: 18%;
-        /*jhfgkjhjjkj*/
-    }
-    
+  .col {
+    margin-left: 18%;
+    /*jhfgkjhjjkj*/
+  }
 }

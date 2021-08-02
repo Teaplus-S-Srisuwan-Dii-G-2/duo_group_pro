@@ -55,6 +55,50 @@ li.price {
   text-decoration: line-through;
 }
 
+.container p {
+  font-size: 35px;
+  font-family: sans-serif;
+}
+
+.container .box p {
+  font-size: 16px;
+  color: #ff3d3d;
+  margin-top: 40px;
+}
+
+.container .box .title h1 {
+  font-size: 26px;
+  color: #d64545;
+}
+
+.container .box .title h2 {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.container .box .select .form-select {
+  height: 55px;
+}
+
+.container .box .select .col-4 p {
+  font-size: 18px;
+  color: gray;
+}
+
+.container .box .select .col-2 p {
+  font-size: 18px;
+  color: gray;
+}
+
+.container .box .sum h1 {
+  font-size: 35px;
+  font-family: sans-serif;
+}
+
+.container .box .sum h2 {
+  font-size: 22px;
+}
+
 @media only screen and (max-width: 768px) {
   header .xx {
     background-color: #fdfdfd;
@@ -62,7 +106,8 @@ li.price {
   ul {
     visibility: hidden;
   }
-  .logo, .Rectanggle {
+  .logo,
+  .Rectanggle {
     visibility: hidden;
   }
   .bag .cv {
