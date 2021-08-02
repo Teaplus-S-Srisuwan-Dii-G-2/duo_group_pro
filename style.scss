@@ -57,7 +57,8 @@ li.price {
   text-decoration: line-through;
 }
 
-.container {
+.container1 {
+    margin: 80px 120px 0 120px;
   p {
     font-size: 35px;
     font-family: sans-serif;
@@ -105,6 +106,26 @@ li.price {
         }
     }
   }
+}
+
+.box-sum {
+    background-color: rgba(230, 224, 224, 0.507);
+    
+    h1 {
+        font-size: 35px;
+    font-family: sans-serif;
+    }
+    .subtotal {
+        margin-top: 40px;
+        font-family: sans-serif;
+        font-size: 18px; 
+    }
+    .total {
+        margin-top: 100px;
+        font-family: sans-serif;
+        font-size: 18px; 
+    }
+
 }
 @media only screen and (max-width: 768px) {
   //Dew
