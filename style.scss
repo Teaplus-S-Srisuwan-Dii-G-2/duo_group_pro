@@ -56,76 +56,101 @@ li {
 li.price {
   text-decoration: line-through;
 }
-
+p {
+  font-size: 32px;
+  font-family: sans-serif;
+}
 .container1 {
-    margin: 80px 120px 0 120px;
-  p {
-    font-size: 35px;
-    font-family: sans-serif;
-  }
+    margin-left: 100px;
   .box {
     p {
       font-size: 16px;
       color: rgb(255, 61, 61);
       margin-top: 40px;
     }
-    .title {
-      h1 {
-        font-size: 26px;
-        color: rgb(214, 69, 69);
-      }
-      h2 {
-        font-size: 24px;
-        font-weight: normal;
+
+    h1 {
+      font-size: 26px;
+      color: rgb(214, 69, 69);
+    }
+    h2 {
+      font-size: 24px;
+      font-weight: normal;
+    }
+  }
+  .select {
+    #size {
+      height: 55px;
+      width: 190px;
+    }
+    .col-4 {
+      p {
+        font-size: 18px;
+        color: gray;
       }
     }
-    .select {
-        .form-select {
-            height: 55px;
-        }
-      .col-4 {
-        p {
-          font-size: 18px;
-          color: gray;
-        }
-      }
-      .col-2 {
-        p {
-          font-size: 18px;
-          color: gray;
-        }
+    .col-2 {
+      p {
+        font-size: 18px;
+        color: gray;
       }
     }
-    .sum {
-        h1 {
-            font-size: 35px;
+  }
+}
+#num {
+  height: 55px;
+  width: 100px;
+}
+.col-4 {
+  p {
+    font-size: 18px;
+    color: gray;
+  }
+}
+.col-2 {
+  p {
+    font-size: 18px;
+    color: gray;
+  }
+}
+
+.sum {
+  h1 {
+    font-size: 35px;
     font-family: sans-serif;
-        }
-        h2 {
-            font-size: 22px;
-        }
-    }
+  }
+  h2 {
+    font-size: 22px;
   }
 }
 
 .box-sum {
-    background-color: rgba(230, 224, 224, 0.507);
-    
-    h1 {
-        font-size: 35px;
+  background-color: rgba(230, 224, 224, 0.507);
+  padding-top: 30px;
+  height: 450px;
+  h1 {
+    font-size: 26px;
     font-family: sans-serif;
+  }
+  .subtotal {
+    margin-top: 40px;
+    font-family: sans-serif;
+    font-size: 18px;
+    .sub {
+      margin-left: 80px;
     }
-    .subtotal {
-        margin-top: 40px;
-        font-family: sans-serif;
-        font-size: 18px; 
+  }
+  .total {
+    margin-top: 100px;
+    font-family: sans-serif;
+    font-size: 18px;
+    .totalNum {
+      margin-left: 80px;
     }
-    .total {
-        margin-top: 100px;
-        font-family: sans-serif;
-        font-size: 18px; 
-    }
-
+  }
+  .btn {
+    width: 400px;
+  }
 }
 @media only screen and (max-width: 768px) {
   //Dew
