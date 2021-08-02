@@ -55,13 +55,13 @@ li.price {
   text-decoration: line-through;
 }
 
-.container1 {
-  margin: 80px 120px 0 120px;
+p {
+  font-size: 32px;
+  font-family: sans-serif;
 }
 
-.container1 p {
-  font-size: 35px;
-  font-family: sans-serif;
+.container1 {
+  margin-left: 100px;
 }
 
 .container1 .box p {
@@ -70,45 +70,63 @@ li.price {
   margin-top: 40px;
 }
 
-.container1 .box .title h1 {
+.container1 .box h1 {
   font-size: 26px;
   color: #d64545;
 }
 
-.container1 .box .title h2 {
+.container1 .box h2 {
   font-size: 24px;
   font-weight: normal;
 }
 
-.container1 .box .select .form-select {
+.container1 .select #size {
   height: 55px;
+  width: 190px;
 }
 
-.container1 .box .select .col-4 p {
+.container1 .select .col-4 p {
   font-size: 18px;
   color: gray;
 }
 
-.container1 .box .select .col-2 p {
+.container1 .select .col-2 p {
   font-size: 18px;
   color: gray;
 }
 
-.container1 .box .sum h1 {
+#num {
+  height: 55px;
+  width: 100px;
+}
+
+.col-4 p {
+  font-size: 18px;
+  color: gray;
+}
+
+.col-2 p {
+  font-size: 18px;
+  color: gray;
+}
+
+.sum h1 {
   font-size: 35px;
   font-family: sans-serif;
 }
 
-.container1 .box .sum h2 {
+.sum h2 {
   font-size: 22px;
 }
 
 .box-sum {
   background-color: rgba(230, 224, 224, 0.507);
+  padding-top: 30px;
+  height: 450px;
 }
 
 .box-sum h1 {
-  font-size: 35px;
+  font-size: 26px;
   font-family: sans-serif;
 }
 
@@ -118,10 +136,22 @@ li.price {
   font-size: 18px;
 }
 
+.box-sum .subtotal .sub {
+  margin-left: 80px;
+}
+
 .box-sum .total {
   margin-top: 100px;
   font-family: sans-serif;
   font-size: 18px;
+}
+
+.box-sum .total .totalNum {
+  margin-left: 80px;
+}
+
+.box-sum .btn {
+  width: 400px;
 }
 
 @media only screen and (max-width: 768px) {
