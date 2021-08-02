@@ -57,6 +57,19 @@
 }
 
 .container1 .input-group {
-  width: 400px;
+  width: 300px;
+}
+
+.container1 .date {
+  width: 120px;
+  margin-left: -65px;
+}
+
+.container1 .cvv {
+  width: 120px;
+}
+
+.container1 .code .input-group {
+  width: 200px;
 }
 /*# sourceMappingURL=checkout_style.css.map */
