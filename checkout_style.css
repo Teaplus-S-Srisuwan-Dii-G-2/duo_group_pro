@@ -1,0 +1,31 @@
+* {
+  background-color: #d4cfcf;
+}
+
+.navbar {
+  padding-left: 100px;
+}
+
+.navbar img {
+  background-color: white;
+}
+
+.navbar .text {
+  background-color: white;
+}
+
+.navbar .text h3 {
+  margin-left: 170px;
+  background-color: white;
+  font-family: sans-serif;
+}
+
+.navbar .text1 {
+  background-color: white;
+  margin-right: 80px;
+}
+
+.navbar .text1 span {
+  background-color: white;
+}
+/*# sourceMappingURL=checkout_style.css.map */
