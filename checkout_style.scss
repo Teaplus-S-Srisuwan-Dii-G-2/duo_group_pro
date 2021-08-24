@@ -9,22 +9,36 @@
     background-color: white;
   }
 
-  .text{
+  .text {
     background-color: white;
-  h3 {
-    margin-left: 170px;
-    background-color: white;
-    font-family: sans-serif;
+    h3 {
+      margin-left: 170px;
+      background-color: white;
+      font-family: sans-serif;
+    }
   }
-  }
-  .text1{
+  .text1 {
     background-color: white;
     margin-right: 80px;
     margin-top: 10px;
 
-    span{
-    background-color: white;
+    span {
+      background-color: white;
     }
   }
 }
 
+.container1 {
+padding-top: 50px;
+  .box1 {
+    background-color: none;
+  }
+  .box2 {
+    background-color: none;
+    width: 200px;
+  }
+  .box3 {
+    background-color: none;
+    width: 200px;
+  }
+}
