@@ -29,4 +29,22 @@
 .navbar .text1 span {
   background-color: white;
 }
+
+.container1 {
+  padding-top: 50px;
+}
+
+.container1 .box1 {
+  background-color: none;
+}
+
+.container1 .box2 {
+  background-color: none;
+  width: 200px;
+}
+
+.container1 .box3 {
+  background-color: none;
+  width: 200px;
+}
 /*# sourceMappingURL=checkout_style.css.map */
