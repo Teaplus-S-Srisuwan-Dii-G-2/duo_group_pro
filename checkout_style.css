@@ -34,6 +34,14 @@
   padding-top: 50px;
 }
 
+.container1 h1 {
+  font-size: 20px;
+}
+
+.container1 h2 {
+  font-size: 16px;
+}
+
 .container1 .box1 {
   background-color: none;
 }
@@ -46,5 +54,9 @@
 .container1 .box3 {
   background-color: none;
   width: 200px;
+}
+
+.container1 .input-group {
+  width: 400px;
 }
 /*# sourceMappingURL=checkout_style.css.map */

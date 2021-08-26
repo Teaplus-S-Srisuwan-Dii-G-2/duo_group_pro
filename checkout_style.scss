@@ -30,6 +30,12 @@
 
 .container1 {
 padding-top: 50px;
+h1 {
+  font-size: 20px;
+}
+h2 {
+  font-size: 16px;
+}
   .box1 {
     background-color: none;
   }
@@ -40,5 +46,8 @@ padding-top: 50px;
   .box3 {
     background-color: none;
     width: 200px;
+  }
+  .input-group {
+    width: 400px;
   }
 }
