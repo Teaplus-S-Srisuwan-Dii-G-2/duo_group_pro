@@ -36,8 +36,9 @@ header .xx {
 }
 
 .Rectanggle {
-  left: 10%;
-  margin: 0 20px 0 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .bag {
@@ -61,7 +62,7 @@ p {
 }
 
 .container1 {
-  margin-left: 100px;
+  margin-left: 50px;
 }
 
 .container1 .box p {
@@ -119,41 +120,6 @@ p {
   font-size: 22px;
 }
 
-.box-sum {
-  background-color: rgba(230, 224, 224, 0.507);
-  padding-top: 30px;
-  height: 450px;
-}
-
-.box-sum h1 {
-  font-size: 26px;
-  font-family: sans-serif;
-}
-
-.box-sum .subtotal {
-  margin-top: 40px;
-  font-family: sans-serif;
-  font-size: 18px;
-}
-
-.box-sum .subtotal .sub {
-  margin-left: 80px;
-}
-
-.box-sum .total {
-  margin-top: 100px;
-  font-family: sans-serif;
-  font-size: 18px;
-}
-
-.box-sum .total .totalNum {
-  margin-left: 80px;
-}
-
-.box-sum .btn {
-  width: 400px;
-}
-
 @media only screen and (max-width: 768px) {
   header .xx {
     background-color: #fdfdfd;
@@ -177,4 +143,4 @@ p {
     /*jhfgkjhjjkj*/
   }
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style_cart.css.map */

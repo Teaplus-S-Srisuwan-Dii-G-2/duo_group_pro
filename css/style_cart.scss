@@ -7,6 +7,8 @@
   margin-bottom: 50px;
 }
 
+
+
 //dev-doom work
 img.carouselimg {
   height: 675px;
@@ -38,8 +40,7 @@ header {
 }
 
 .Rectanggle {
-  left: 10%;
-  margin: 0 20px 0 20px;
+  align-items: center;
 }
 
 .bag {
@@ -60,8 +61,9 @@ p {
   font-size: 32px;
   font-family: sans-serif;
 }
+
 .container1 {
-    margin-left: 100px;
+    margin-left: 50px;
   .box {
     p {
       font-size: 16px;
@@ -124,34 +126,34 @@ p {
   }
 }
 
-.box-sum {
-  background-color: rgba(230, 224, 224, 0.507);
-  padding-top: 30px;
-  height: 450px;
-  h1 {
-    font-size: 26px;
-    font-family: sans-serif;
-  }
-  .subtotal {
-    margin-top: 40px;
-    font-family: sans-serif;
-    font-size: 18px;
-    .sub {
-      margin-left: 80px;
-    }
-  }
-  .total {
-    margin-top: 100px;
-    font-family: sans-serif;
-    font-size: 18px;
-    .totalNum {
-      margin-left: 80px;
-    }
-  }
-  .btn {
-    width: 400px;
-  }
-}
+// .box-sum {
+//   background-color: rgba(230, 224, 224, 0.507);
+//   padding-top: 30px;
+//   height: 450px;
+//   h1 {
+//     font-size: 26px;
+//     font-family: sans-serif;
+//   }
+//   .subtotal {
+//     margin-top: 40px;
+//     font-family: sans-serif;
+//     font-size: 18px;
+//     .sub {
+//       margin-left: 80px;
+//     }
+//   }
+//   .total {
+//     margin-top: 100px;
+//     font-family: sans-serif;
+//     font-size: 18px;
+//     .totalNum {
+//       margin-left: 80px;
+//     }
+//   }
+//   .btn {
+//     width: 400px;
+//   }
+// }
 @media only screen and (max-width: 768px) {
   //Dew
 
