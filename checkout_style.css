@@ -1,0 +1,75 @@
+* {
+  background-color: #d4cfcf;
+}
+
+.navbar {
+  padding-left: 100px;
+}
+
+.navbar img {
+  background-color: white;
+}
+
+.navbar .text {
+  background-color: white;
+}
+
+.navbar .text h3 {
+  margin-left: 170px;
+  background-color: white;
+  font-family: sans-serif;
+}
+
+.navbar .text1 {
+  background-color: white;
+  margin-right: 80px;
+  margin-top: 10px;
+}
+
+.navbar .text1 span {
+  background-color: white;
+}
+
+.container1 {
+  padding-top: 50px;
+}
+
+.container1 h1 {
+  font-size: 20px;
+}
+
+.container1 h2 {
+  font-size: 16px;
+}
+
+.container1 .box1 {
+  background-color: none;
+}
+
+.container1 .box2 {
+  background-color: none;
+  width: 200px;
+}
+
+.container1 .box3 {
+  background-color: none;
+  width: 200px;
+}
+
+.container1 .input-group {
+  width: 300px;
+}
+
+.container1 .date {
+  width: 120px;
+  margin-left: -65px;
+}
+
+.container1 .cvv {
+  width: 120px;
+}
+
+.container1 .code .input-group {
+  width: 200px;
+}
+/*# sourceMappingURL=checkout_style.css.map */

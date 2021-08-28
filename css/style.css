@@ -36,8 +36,9 @@ header .xx {
 }
 
 .Rectanggle {
-  left: 10%;
-  margin: 0 20px 0 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .bag {
@@ -55,6 +56,70 @@ li.price {
   text-decoration: line-through;
 }
 
+p {
+  font-size: 32px;
+  font-family: sans-serif;
+}
+
+.container1 {
+  margin-left: 50px;
+}
+
+.container1 .box p {
+  font-size: 16px;
+  color: #ff3d3d;
+  margin-top: 40px;
+}
+
+.container1 .box h1 {
+  font-size: 26px;
+  color: #d64545;
+}
+
+.container1 .box h2 {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.container1 .select #size {
+  height: 55px;
+  width: 190px;
+}
+
+.container1 .select .col-4 p {
+  font-size: 18px;
+  color: gray;
+}
+
+.container1 .select .col-2 p {
+  font-size: 18px;
+  color: gray;
+}
+
+#num {
+  height: 55px;
+  width: 100px;
+}
+
+.col-4 p {
+  font-size: 18px;
+  color: gray;
+}
+
+.col-2 p {
+  font-size: 18px;
+  color: gray;
+}
+
+.sum h1 {
+  font-size: 35px;
+  font-family: sans-serif;
+}
+
+.sum h2 {
+  font-size: 22px;
+}
+
 @media only screen and (max-width: 768px) {
   header .xx {
     background-color: #fdfdfd;
@@ -62,7 +127,8 @@ li.price {
   ul {
     visibility: hidden;
   }
-  .logo, .Rectanggle {
+  .logo,
+  .Rectanggle {
     visibility: hidden;
   }
   .bag .cv {
