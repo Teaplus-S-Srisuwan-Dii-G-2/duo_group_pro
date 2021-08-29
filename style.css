@@ -62,7 +62,11 @@ p {
 }
 
 .container1 {
-  margin-left: 50px;
+  margin-left: 100px;
+}
+
+.container1 p {
+  margin-top: 80px;
 }
 
 .container1 .box p {
@@ -79,6 +83,12 @@ p {
 .container1 .box h2 {
   font-size: 24px;
   font-weight: normal;
+}
+
+.container1 .continue p {
+  color: gray;
+  font-size: 16px;
+  margin-top: -100;
 }
 
 .container1 .select #size {
@@ -118,6 +128,18 @@ p {
 
 .sum h2 {
   font-size: 22px;
+}
+
+.summary .sub {
+  margin-left: 110px;
+}
+
+.summary .total {
+  margin-left: 110px;
+}
+
+.summary .btn {
+  width: 250px;
 }
 
 @media only screen and (max-width: 768px) {

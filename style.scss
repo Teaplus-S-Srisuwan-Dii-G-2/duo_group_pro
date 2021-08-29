@@ -1,3 +1,10 @@
+// body {
+//   width: 100vw;
+//   height: 100vh;
+//   overflow: auto;
+//   margin: 0;
+//   padding: 0;
+// }
 .card-img-top {
   height: 300px;
   width: 270px;
@@ -63,7 +70,10 @@ p {
 }
 
 .container1 {
-    margin-left: 50px;
+    margin-left: 100px;
+    p {
+      margin-top: 80px;
+    }
   .box {
     p {
       font-size: 16px;
@@ -78,6 +88,13 @@ p {
     h2 {
       font-size: 24px;
       font-weight: normal;
+    }
+  }
+  .continue {
+    p{
+    color: gray;
+    font-size: 16px;
+    margin-top: -100;
     }
   }
   .select {
@@ -125,6 +142,18 @@ p {
     font-size: 22px;
   }
 }
+.summary {
+  .sub {
+    margin-left: 110px;
+  }
+  .total {
+    margin-left: 110px;
+  }
+  .btn {
+    width: 250px;
+  }
+}
+
 
 // .box-sum {
 //   background-color: rgba(230, 224, 224, 0.507);
