@@ -13,7 +13,6 @@ async function getslid_show(){
     
     document.getElementById('slid_img4').setAttribute("src", response.data[3].imageUrl)
     document.getElementById('slid_text4').innerHTML = response.data[3].sliderText
-
 }
 
 const getProductDetails = async () => {

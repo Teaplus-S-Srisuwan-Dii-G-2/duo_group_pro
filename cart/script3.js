@@ -1,3 +1,5 @@
+// !page 3
+
 output = document.getElementById("output");
 const dataJson = localStorage.getItem("dataproduct");
 let obj = JSON.parse(dataJson);
@@ -24,7 +26,9 @@ function addpay() {
   divPayContent.classList.add("card");
   let ulPay = document.createElement("ul");
   ulPay.classList.add("list-group");
+
   ulPay.classList.add("list-group-flush");
+
   let liPay = document.createElement("il");
   liPay.classList.add("list-group-item");
   let liPay2 = document.createElement("il");
@@ -36,7 +40,7 @@ function addpay() {
   let p2 = document.createElement("p");
   p2.classList.add("ttp");
   let a = document.createElement('a')
-  a.setAttribute("href","page4.html")
+  a.setAttribute("href","/html/checkout.html")
   let buttonPay = document.createElement("button");
   buttonPay.classList.add("btn");
   buttonPay.classList.add("btn-secondary");
@@ -56,14 +60,19 @@ function addpay() {
   p2.textContent = `total ${totalprice}`;
 
   let contentPay = document.querySelector(".pay");
+  contentPay.appendChild(divPayContent);
+  divPayContent.appendChild(ulPay);
 
+  ulPay.appendChild(liPay);
+  ulPay.appendChild(liPay2);
+  ulPay.appendChild(liPay3);
+  ulPay.appendChild(a);
 }
 
-function addtext(data, x) {
+async function addtext(data, x) {
   let qty = 1;
   let section = document.querySelector("aside"); // กล่องด้านนอก
-//   section.classList.add("row");
-
+  section.classList.add("row");
   let divAllContent = document.createElement("div");
   divAllContent.classList.add("row");
 
@@ -170,31 +179,33 @@ function addtext(data, x) {
   console.log(qty, totalprice);
 
   // จัดของใส่กล่อง
-//   let section = document.querySelector("aside");
+  // let section = document.querySelector("aside");
   let contentPrd = document.querySelector(".contentPrd");
 
   contentPrd.appendChild(divPicCol);
-//   divPicCol.appendChild(pic);
-//   contentPrd.appendChild(divContentCol);
-//   divContentCol.appendChild(headName);
-//   divContentCol.appendChild(priceName);
-//   divContentCol.appendChild(divselectqtyandsize);
-//   divselectqtyandsize.appendChild(divselectSize);
-//   divselectSize.appendChild(pSize);
+  divPicCol.appendChild(pic);
+  contentPrd.appendChild(divContentCol);
+  divContentCol.appendChild(headName);
+  divContentCol.appendChild(priceName);
+  divContentCol.appendChild(divselectqtyandsize);
+  divselectqtyandsize.appendChild(divselectSize);
+  divselectSize.appendChild(pSize);
 
-//   divselectSize.appendChild(sizeDisplay);
-//   sizeDisplay.appendChild(sizeOption);
-//   // sizeOption.appendChild(defultOption)
-//   divselectqtyandsize.appendChild(divselectQty);
-//   divselectQty.appendChild(pQty);
+  divselectSize.appendChild(sizeDisplay);
+  sizeDisplay.appendChild(sizeOption);
+  // sizeOption.appendChild(defultOption)
+  divselectqtyandsize.appendChild(divselectQty);
+  divselectQty.appendChild(pQty);
 
-//   divselectQty.appendChild(opt);
+  divselectQty.appendChild(opt);
 
-//   divContentCol.appendChild(pRemove);
-  contentPay.appendChild(divPayContent);
-  divPayContent.appendChild(ulPay);
-  ulPay.appendChild(liPay);
-  ulPay.appendChild(liPay2);
-  ulPay.appendChild(liPay3);
-  ulPay.appendChild(a);
+  divContentCol.appendChild(pRemove);
 }
+
+// function updateCartTotal(input,price) {
+//   var quantity = input;
+//   console.log(quantity,price);
+//   total = total + price * quantity;
+//   document.getElementsByClassName('ttp').textContent= total
+//   console.log(total);
+// }

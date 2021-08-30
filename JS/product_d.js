@@ -4,7 +4,9 @@ var re = "";
 const getProductOneDetail = async () => {
   console.log(searchParams);
   try {
-    const response = await axios.get("https://6102d7aa79ed680017482359.mockapi.io/productdetail");
+    const response = await axios.get(
+      "https://6102d7aa79ed680017482359.mockapi.io/productdetail"
+    );
     let resulte = response.data.filter((data) => {
       return data.id == searchParams;
     });
