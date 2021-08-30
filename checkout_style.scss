@@ -2,6 +2,7 @@
   font-family: "Barlow", sans-serif;
 }
 
+header {
 .navbar {
   font-family: "Barlow", sans-serif;
   background-color: rgb(27, 27, 27);
@@ -22,6 +23,11 @@
     }
   }
 }
+}
+
+// body{
+//   background-color: #cac4c4;
+// }
 
 .container1 {
   margin-left: 200px;
@@ -34,6 +40,7 @@
   h2 {
     font-size: 16px;
   }
+  
   .payment {
     button {
       background-color: white;
