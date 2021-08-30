@@ -1,26 +1,8 @@
-const getslid_show = async () => {
-    try {
-      const response = await axios.get("https://6102d7aa79ed680017482359.mockapi.io/slider");
-      console.log(response)
-      document.getElementById("slid_show").innerHTML = response.data
-        .map(
-          (slider) => 
-            `
-            <div class="carousel-item">
-                    <img src="${slider.imageUrl}" class="d-block carouselimg col-md-auto" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <p>${slider.sliderText}</p>
-                    </div>
-                </div>
-          `
-        )
-        .join("");
-    } catch (e) {
-      console.log(e.message);
-    }
-  };
-
-
+async function getslid_show(){
+    const response = await axios.get("https://6102d7aa79ed680017482359.mockapi.io/slider");
+    console.log(response)
+    
+}
 
 const getProductDetails = async () => {
     try {
