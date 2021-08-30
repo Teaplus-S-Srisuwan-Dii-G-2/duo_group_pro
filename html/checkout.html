@@ -6,10 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/checkout_style.css">
+    <script src="/JS/checkout.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400&display=swap" rel="stylesheet">
-    <title>Hello, world!</title>
+    <title>>checkout</title>
 </head>
 
 
@@ -17,7 +18,7 @@
 <header>
     <nav class="navbar">
         <div class="logo">
-            <img src="image/img/logo.png">
+            <img src="/image/img/logo.png">
         </div>
         <div class="text ">
             <h3>Checkout</h3>
@@ -28,7 +29,7 @@
     </nav>
 </header>
 
-<body>
+<body onload="set_value()">
     <div class="container1">
         <h1>Payment method</h1>
         <div class="row">
@@ -37,19 +38,19 @@
                 <div class="payment row">
                     <div class="paypal col-3">
                         <button type="button">
-                            <img src="./image/img/paypal.png" alt="">
+                            <img src="/image/img/paypal.png" alt="">
                             Paypal
                         </button>
                     </div>
                     <div class="credit col-4">
                         <button type="button">
-                            <img src="./image/img/credit.png" alt="">
+                            <img src="/image/img/credit.png" alt="">
                             Credit Card
                         </button>
                     </div>
                     <div class="cash col-4">
                         <button type="button">
-                            <img src="./image/img/money.svg" alt="">
+                            <img src="/image/img/money.svg" alt="">
                             Cash On Delivery</button>
                     </div>
                 </div>
@@ -63,7 +64,7 @@
                         <div class="text">Subtotal</div>
                     </div>
                     <div class="box2 col-3">
-                        <div class="sub">35000</div>
+                        <div class="sub" id="total_price1">35000</div>
                     </div>
                 </div>
                 <hr>
@@ -72,7 +73,7 @@
                         <div class="text">Total to pay</div>
                     </div>
                     <div class="box2 col-3">
-                        <div class="total">35000</div>
+                        <div class="total" id="total_price2">35000</div>
                     </div>
                 </div>
             </div>
@@ -122,15 +123,15 @@
                     Billing address same as delivery address
                 </label>
             </div>
-            <p>"I authorise Jersay Shop to charge my card for a total amount of $110.92 USD"</p>
+            <p id="p_get_price">"I authorise Jersay Shop to charge my card for a total amount of $110.92 USD"</p>
         </div>
 
         <div class="back row">
             <div class="back-box col-2">
-                <button type="button">Back</button>
+                <a href="/cart/page3.html"><button type="button">Back</button></a>
             </div>
             <div class="confirm col-2">
-                <button type="button">Confirm payment: $110.92</button>
+                <button type="button" id="checkout" onclick="checkout()">Confirm payment: $110.92</button>
             </div>
         </div>
     </div>
