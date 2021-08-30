@@ -1,30 +1,39 @@
-function kenshi_yonezu() {
-    let kenshi_Y = document.createElement('div')
-    kenshi_Y.classList.add("row")
-    let k_yonezu = document.createElement('div')
-    k_yonezu.classList.add("col")
-    kenshi_Y.appendChild(k_yonezu)
-
-    //     <div class="col">
-    //         <div class="card" style="width: 18rem;">
-    //             <img src="./image/Pic_Product/1.jpg" class="card-img-top" alt="...">
-    //             <div class="card-body">
-    //                 <h5 class="card-title">Chelsea F.C. 2020/21 Stadium Home</h5>
-    //                 <li class="card-text text-danger">$67.86</li>
-    //                 <li class="price card-text text-muted">$67.86</li>
-    //             </div>
-    //         </div>
-    //     </div>
-    document.getElementById('showall').appendChild(kenshi_Y)
-
-
-}
-
-function getdataproduct_all() {
-    axios.get("https://6102d7aa79ed680017482359.mockapi.io/productlist").then(res => {
-        console.log(`res`, res.data)
-    }).catch(err => {
-        console.log(`err`, err)
-    })
-
-}
+const getProductDetails = async () => {
+    try {
+      const response = await axios.get(
+        "https://6102d7aa79ed680017482359.mockapi.io/productlist"
+      );
+      console.log(response)
+      document.getElementById("showall").innerHTML = response.data
+        .map(
+          (product) => 
+            `
+            <div class=" col-6 col-lg-4 col-xxl-3 mb-4">
+                      <div class="card">
+                      <img class="picAll card-img-top" src="${product.prdImageUrl}" alt="Card image cap">
+                      <div class="card-body">
+      <h6 class="card-title">${product.prdname}</h6>
+      <br>
+      <div class="row ">
+      <div class="col-6 ">
+      <p class="fs-5 text-danger">${product.prdPrice} THB</p>
+      
+      </div> 
+      <div class="col-6 align-self-end">
+     
+      <button type="button" class="btn btn-secondary "  onclick="location.href= '/html/product_detail.html?id=${product.id}'";>ADD      </button>
+      </div>   
+      </div>  
+     
+    </div>  
+  </div>
+  </div>
+          `
+        )
+        .join("");
+    } catch (e) {
+      console.log(e.message);
+    }
+  };
+  getProductDetails();
+  
