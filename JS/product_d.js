@@ -39,28 +39,41 @@ async function setlocal(data) {
 async function ShowDetail(data, searchParams) {
   let divAll = document.getElementById("Detail");
   let divPic = document.createElement("div");
+
+  //img
   divPic.classList.add("card");
   divPic.classList.add("col-lg-7");
   divPic.classList.add("col-xs-12");
   let imgPrd = document.createElement("img");
   imgPrd.setAttribute("src", data.prdImageUrl);
   imgPrd.classList.add("pic_select");
-  imgPrd.classList.add("card-img-top");
+  imgPrd.setAttribute('width', '100%');
+  imgPrd.setAttribute('height', 'auto');
+  // imgPrd.classList.add("card-img-top");
 
+  //product info
   divCon = document.createElement("div");
+  divCon.classList.add("detail");
   divCon.classList.add("col-lg-4");
   divCon.classList.add("col-xs-12");
-  let prdName = document.createElement("h2");
-  prdName.textContent = `Product name: ${data.prdname}`;
-  let prdPrice = document.createElement("h4");
+
+  //product name
+  let prdName = document.createElement("h3");
+  prdName.textContent = `${data.prdname}`; //product name
+
+  //price
+  let prdPrice = document.createElement("h2");
   prdPrice.classList.add("text-danger");
   let tPrice =`${data.prdPrice}  THB`;
   prdPrice.textContent = tPrice;
-  let pSize = document.createElement("p");
+
+  //size
+  let pSize = document.createElement("h5");
   pSize.classList.add("text-secondary");
   pSize.textContent = "Size";
   let optionSize = document.createElement("option");
   let selectSize = document.createElement("select");
+  selectSize.classList.add("size")
   selectSize.setAttribute("name", "size");
   selectSize.setAttribute("size", "1");
 
@@ -77,6 +90,7 @@ async function ShowDetail(data, searchParams) {
     
   })
 
+  //add to bag button
   let bttAddBag = document.createElement("button");
   bttAddBag.classList.add("btn");
   bttAddBag.classList.add("btn-dark");
@@ -86,18 +100,21 @@ async function ShowDetail(data, searchParams) {
   bttAddBag.textContent = "Add To Bag";
   bttAddBag.setAttribute("id", "myBtn");
   bttAddBag.addEventListener('click',(()=>{setlocal(re)}))
-  let tPrdDetail = document.createElement("h3");
+
+  //product detail
+  let tPrdDetail = document.createElement("h4");
   tPrdDetail.textContent = "Product Details";
   let prePrdDetail = document.createElement("h5");
   prePrdDetail.textContent = data.txtDetail
 
+  //show detail button
   let bttShowDetai = document.createElement("button");
   bttShowDetai.classList.add("btndetail");
   bttShowDetai.classList.add("btn");
   bttShowDetai.classList.add("btn-secondary");
   bttShowDetai.classList.add("text-dark");
 
-  bttShowDetai.textContent = "Show detail";
+  bttShowDetai.textContent = "Show More Details";
 
   divPic.appendChild(imgPrd);
   divAll.appendChild(divPic);
