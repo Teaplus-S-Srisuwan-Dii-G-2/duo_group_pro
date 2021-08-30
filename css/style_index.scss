@@ -1,0 +1,145 @@
+.card-img-top {
+  height: 300px;
+  width: 270px;
+}
+
+.row {
+  margin-bottom: 50px;
+}
+
+
+p.sideH {
+  margin-bottom: 7rem;
+}
+
+div.slide {
+  margin-bottom: 5rem;
+}
+
+header {
+  .h-100 {
+    height: auto;
+  }
+  .xx {
+    background-color: rgb(27, 27, 27);
+  }
+}
+
+.logo {
+  margin: 0 20px 0 20px;
+  width: 50px;
+  height: 50px;
+  background: url(/img/logo.png);
+}
+
+.Rectanggle {
+  align-items: center;
+}
+
+.bag {
+  position: absolute;
+  width: 16.13px;
+  left: 85%;
+}
+
+li {
+  display: inline;
+  margin-right: 10px;
+}
+
+li.price {
+  text-decoration: line-through;
+}
+p {
+  font-size: 32px;
+  font-family: sans-serif;
+}
+
+.container1 {
+    margin-left: 50px;
+  .box {
+    p {
+      font-size: 16px;
+      color: rgb(255, 61, 61);
+      margin-top: 40px;
+    }
+
+    h1 {
+      font-size: 26px;
+      color: rgb(214, 69, 69);
+    }
+    h2 {
+      font-size: 24px;
+      font-weight: normal;
+    }
+  }
+  .select {
+    #size {
+      height: 55px;
+      width: 190px;
+    }
+    .col-4 {
+      p {
+        font-size: 18px;
+        color: gray;
+      }
+    }
+    .col-2 {
+      p {
+        font-size: 18px;
+        color: gray;
+      }
+    }
+  }
+}
+#num {
+  height: 55px;
+  width: 100px;
+}
+.col-4 {
+  p {
+    font-size: 18px;
+    color: gray;
+  }
+}
+.col-2 {
+  p {
+    font-size: 18px;
+    color: gray;
+  }
+}
+
+.sum {
+  h1 {
+    font-size: 35px;
+    font-family: sans-serif;
+  }
+  h2 {
+    font-size: 22px;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  header {
+    .xx {
+      background-color: rgb(253, 253, 253);
+    }
+  }
+
+  ul {
+    visibility: hidden;
+  }
+  .logo,.Rectanggle {
+    visibility: hidden;
+  }
+  .bag .cv {
+    color: black;
+  }
+
+  .col {
+    margin-left: 18%;
+    
+  }
+}
