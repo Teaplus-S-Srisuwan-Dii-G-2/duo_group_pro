@@ -2,6 +2,7 @@ async function getslid_show(){
     const response = await axios.get("https://6102d7aa79ed680017482359.mockapi.io/slider");
     console.log(response)
     
+    document.getElementById('slid_img1').setAttribute("src", response.data.id=(1).imageUrl)
 }
 
 const getProductDetails = async () => {
