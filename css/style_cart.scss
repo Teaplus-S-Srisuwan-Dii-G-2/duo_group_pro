@@ -62,68 +62,91 @@ p {
   font-family: sans-serif;
 }
 
-.container1 {
-    margin-left: 50px;
-  .box {
-    p {
-      font-size: 16px;
-      color: rgb(255, 61, 61);
-      margin-top: 40px;
-    }
 
-    h1 {
-      font-size: 26px;
-      color: rgb(214, 69, 69);
-    }
-    h2 {
-      font-size: 24px;
-      font-weight: normal;
+
+.container1 {
+  margin-left: 100px;
+  p {
+    margin-top: 80px;
+  }
+.box {
+  p {
+    font-size: 16px;
+    color: rgb(255, 61, 61);
+    margin-top: 40px;
+  }
+
+  h1 {
+    font-size: 26px;
+    color: rgb(214, 69, 69);
+  }
+  h2 {
+    font-size: 24px;
+    font-weight: normal;
+  }
+}
+.continue {
+  p{
+  color: gray;
+  font-size: 16px;
+  margin-top: -100;
+  }
+}
+.select {
+  #size {
+    height: 55px;
+    width: 190px;
+  }
+  .col-4 {
+    p {
+      font-size: 18px;
+      color: gray;
     }
   }
-  .select {
-    #size {
-      height: 55px;
-      width: 190px;
-    }
-    .col-4 {
-      p {
-        font-size: 18px;
-        color: gray;
-      }
-    }
-    .col-2 {
-      p {
-        font-size: 18px;
-        color: gray;
-      }
+  .col-2 {
+    p {
+      font-size: 18px;
+      color: gray;
     }
   }
+}
 }
 #num {
-  height: 55px;
-  width: 100px;
+height: 55px;
+width: 100px;
 }
 .col-4 {
-  p {
-    font-size: 18px;
-    color: gray;
-  }
+p {
+  font-size: 18px;
+  color: gray;
+}
 }
 .col-2 {
-  p {
-    font-size: 18px;
-    color: gray;
-  }
+p {
+  font-size: 18px;
+  color: gray;
+}
 }
 
 .sum {
-  h1 {
-    font-size: 35px;
-    font-family: sans-serif;
-  }
-  h2 {
-    font-size: 22px;
-  }
+h1 {
+  font-size: 35px;
+  font-family: sans-serif;
+}
+h2 {
+  font-size: 22px;
+}
+}
+.summary {
+.sub {
+  margin-left: 110px;
+}
+.total {
+  margin-left: 110px;
+}
+.btn {
+  width: 250px;
+}
 }
 
 // .box-sum {
