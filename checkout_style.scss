@@ -1,65 +1,115 @@
-//checkout
 * {
-  background-color: rgb(212, 207, 207);
+  font-family: "Barlow", sans-serif;
 }
+
 .navbar {
-  padding-left: 100px;
-
-  img {
-    background-color: white;
+  font-family: "Barlow", sans-serif;
+  background-color: rgb(27, 27, 27);
+  height: 60px;
+  .logo {
+    margin-left: 120px;
+    width: 50px;
+    height: 50px;
   }
-
   .text {
-    background-color: white;
-    h3 {
-      margin-left: 170px;
-      background-color: white;
-      font-family: sans-serif;
-    }
+    color: white;
+    margin-left: 250px;
   }
   .text1 {
-    background-color: white;
-    margin-right: 80px;
-    margin-top: 10px;
-
-    span {
-      background-color: white;
+    margin: 10px 120px 0 0;
+    p {
+      color: white;
     }
   }
 }
 
 .container1 {
-padding-top: 50px;
-h1 {
-  font-size: 20px;
-}
-h2 {
-  font-size: 16px;
-}
-  .box1 {
-    background-color: none;
+  margin-left: 200px;
+  padding-top: 50px;
+  h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
   }
-  .box2 {
-    background-color: none;
-    width: 200px;
+  h2 {
+    font-size: 16px;
   }
-  .box3 {
-    background-color: none;
-    width: 200px;
+  .payment {
+    button {
+      background-color: white;
+      height: 35px;
+      border: 2px solid lightgray;
+    }
+    .credit {
+      margin-left: -40px;
+    }
+    .cash {
+      margin-left: -50px;
+    }
   }
-  .input-group {
-    width: 300px;
+
+  .summary {
+    margin-left: 200px;
+    font-weight: bold;
+    .subtotal {
+      margin-bottom: 50px;
+      .sub {
+        margin-left: 110px;
+      }
+    }
+    .total {
+      .total {
+        margin-left: 110px;
+      }
+    }
   }
-  .date{
-    width: 120px;
-    margin-left: -65px;
-  }
-  .cvv {
-    width: 120px;
-  }
-  .code{
+
+  .details {
+    margin-top: -80px;
     .input-group {
-      width: 200px;
+      width: 350px;
+    }
+    .date {
+      margin-left: 35px;
+      width: 120px;
+    }
+    .cvv {
+      width: 120px;
+    }
+  }
+
+  .code {
+    margin-top: 20px;
+    .input-group {
+      width: 300px;
+    }
+  }
+
+  .billing {
+    margin-top: 40px;
+    p {
+      margin-top: 40px;
+    }
+  }
+
+  .back {
+    .back-box {
+      button {
+        width: 150px;
+        height: 35px;
+        background-color: white;
+        border: 2px solid lightgray;
+      }
+    }
+    .confirm {
+      button {
+        width: 500px;
+        height: 35px;
+        color: white;
+        background-color: black;
+        border: none;
+        margin-left: -55px;
+      }
     }
   }
 }

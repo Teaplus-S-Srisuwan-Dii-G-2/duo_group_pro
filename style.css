@@ -28,6 +28,10 @@ header .xx {
   background-color: #1b1b1b;
 }
 
+header .container {
+  height: 60px;
+}
+
 .logo {
   margin: 0 20px 0 20px;
   width: 50px;

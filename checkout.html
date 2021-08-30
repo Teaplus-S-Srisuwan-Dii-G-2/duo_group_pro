@@ -8,20 +8,21 @@
     <link rel="stylesheet" href="checkout_style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400&display=swap" rel="stylesheet">
     <title>Hello, world!</title>
 </head>
 
 <body>
     <!--header-->
-    <nav class="navbar bg-white">
-        <div class="bitmap">
+    <nav class="navbar">
+        <div class="logo">
             <img src="image/img/logo.png">
         </div>
         <div class="text ">
             <h3>Checkout</h3>
         </div>
         <div class="text1">
-            <span style="color:gray">Having troubles? Call us</span> +44(0)2076604453</p>
+            <p><span style="color:rgb(212, 212, 212)">Having troubles? Call us</span> +44(0)2076604453</p>
         </div>
     </nav>
 
@@ -31,42 +32,54 @@
         <div class="row">
 
             <div class="col-5">
-                <div class="row">
-                    <div class="box1 col-3">
-                        <button type="button">Paypal</button>
+                <div class="payment row">
+                    <div class="paypal col-3">
+                        <button type="button">
+                            <img src="./image/img/paypal.png" alt="">
+                            Paypal
+                        </button>
                     </div>
-                    <div class="box2 col-3">
-                        <button type="button">Credit Card</button>
+                    <div class="credit col-4">
+                        <button type="button">
+                            <img src="./image/img/credit.png" alt="">
+                            Credit Card
+                        </button>
                     </div>
-                    <div class="box3 col-3">
-                        <button type="button">Cash On Delivery</button>
+                    <div class="cash col-4">
+                        <button type="button">
+                            <img src="./image/img/money.svg" alt="">
+                            Cash On Delivery</button>
                     </div>
                 </div>
             </div>
 
             <!--บล็อกสรุปรายการสั่งซื้อ-->
-            <div class="col-3">
-                <h1>summary</h1>
-                <div class="row">
-                    <div class="box1 col-3">
+            <div class="summary col-3">
+                <h1>Summary</h1>
+                <div class="subtotal row">
+                    <div class="box1 col-4">
                         <div class="text">Subtotal</div>
                     </div>
                     <div class="box2 col-3">
-                        <div class="sud">35000</div>
+                        <div class="sub">35000</div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="box1 col-3">
-                        <div class="text">total</div>
+                <hr>
+                <div class="total row">
+                    <div class="box1 col-4">
+                        <div class="text">Total to pay</div>
                     </div>
                     <div class="box2 col-3">
-                        <div class="sud">35000</div>
+                        <div class="total">35000</div>
                     </div>
                 </div>
             </div>
         </div>
-        <h1>Add Payment Details</h1>
-        <div class="row">
+
+        <!--payment method-->
+        <div class="details row">
+            <h1>Add Payment Details</h1>
+
             <div class="col-3">
                 <h2>Card Number</h2>
                 <div class="input-group">
@@ -87,6 +100,7 @@
                 </div>
             </div>
         </div>
+
         <div class="code">
             <h2>Promo Code (if any)</h2>
             <div class="input-group mb-3">
@@ -97,20 +111,24 @@
                 </span>
             </div>
         </div>
-        <h1>Billing Address</h1>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-            <label class="form-check-label" for="flexCheckChecked">
-                Billing address same as delivery address
-            </label>
-        </div>
-        <p>"I authorise Jersay Shop to charge my card for a total amount of $110.92 USD"</p>
-        <div class="row">
-            <div class="col-2">
-                <input type="text" class="form-control" placeholder="Back">
+
+        <div class="billing">
+            <h1>Billing Address</h1>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                    Billing address same as delivery address
+                </label>
             </div>
-            <div class="col-2">
-                <input type="text" class="form-control" placeholder="Confirm payment: $110.92">
+            <p>"I authorise Jersay Shop to charge my card for a total amount of $110.92 USD"</p>
+        </div>
+
+        <div class="back row">
+            <div class="back-box col-2">
+                <button type="button">Back</button>
+            </div>
+            <div class="confirm col-2">
+                <button type="button">Confirm payment: $110.92</button>
             </div>
         </div>
     </div>
