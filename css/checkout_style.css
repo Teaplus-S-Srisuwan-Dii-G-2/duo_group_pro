@@ -121,4 +121,60 @@ header .navbar .text1 p {
   border: none;
   margin-left: -55px;
 }
+
+@media only screen and (max-width: 800px) {
+  header {
+    display: none;
+  }
+  .container1 {
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .container1 .payment {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container1 .payment .paypal button {
+    width: 400px;
+    margin-bottom: 10px;
+  }
+  .container1 .payment .credit button {
+    width: 400px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+  }
+  .container1 .payment .cash button {
+    width: 400px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+  }
+  .container1 .summary {
+    display: none;
+  }
+  .container1 .details {
+    display: none;
+  }
+  .container1 .code {
+    margin-top: 30px;
+  }
+  .container1 .code .input-group {
+    width: 400px;
+  }
+  .container1 .billing p {
+    display: none;
+  }
+  .container1 .back .back-box {
+    display: none;
+  }
+  .container1 .back .confirm button {
+    width: 400px;
+    margin-top: 45px;
+    margin-left: 0px;
+  }
+}
 /*# sourceMappingURL=checkout_style.css.map */
