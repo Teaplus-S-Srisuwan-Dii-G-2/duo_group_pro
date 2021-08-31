@@ -95,7 +95,7 @@ async function ShowDetail(data, searchParams) {
   bttAddBag.classList.add("btn");
   bttAddBag.classList.add("btn-dark");
   bttAddBag.classList.add("text-white");
-
+  bttAddBag.classList.add("bagbut")
   bttAddBag.setAttribute("id", "addToBag");
   bttAddBag.textContent = "Add To Bag";
   bttAddBag.setAttribute("id", "myBtn");

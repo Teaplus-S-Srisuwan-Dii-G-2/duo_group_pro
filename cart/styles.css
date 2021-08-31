@@ -1,146 +1,172 @@
 * {
-    outline: none;
-  }
-  
-  button {
-    width: 100%;
-  }
-  
-  button.btn-secondary, .btn.btn-secondary {
-    color: #fff;
-    background-color: black;
-    border-color: black;
-  }
-  
-  .col-8, .col-4 {
-    margin-bottom: 50px;
-    margin-bottom: 50px;
-  }
-  
-  img.picAll {
-    width: 100%;
-  }
-  
-  .pic_select {
-    height: 80%;
-    width: 500px;
-  }
-  
-  p.sideH {
-    margin-bottom: 7rem;
-  }
-  
-  div.slide {
-    margin-bottom: 5rem;
-  }
-  
-  header .h-100 {
-    height: auto;
-  }
-  
+  outline: none;
+}
+
+button {
+  width: 100%;
+}
+
+button.btn-secondary, .btn.btn-secondary {
+  color: #fff;
+  background-color: black;
+  border-color: black;
+}
+
+.col-8, .col-4 {
+  margin-bottom: 50px;
+  margin-bottom: 50px;
+}
+
+img.picAll {
+  width: 100%;
+}
+
+.pic_select {
+  height: 80%;
+  width: 500px;
+}
+
+p.sideH {
+  margin-bottom: 7rem;
+}
+
+div.slide {
+  margin-bottom: 5rem;
+}
+
+header .h-100 {
+  height: auto;
+}
+
+header .xx {
+  background-color: #1b1b1b;
+}
+
+.logo {
+  margin: 0 20px 0 20px;
+  width: 50px;
+  height: 50px;
+  background: url(/img/logo.png);
+}
+
+.Rectanggle {
+  left: 10%;
+  margin: 0 20px 0 20px;
+}
+
+.bag {
+  position: absolute;
+  width: 16.13px;
+  left: 85%;
+}
+
+.bag .cv {
+  color: white;
+}
+
+li {
+  display: inline;
+  margin-right: 10px;
+}
+
+li.price {
+  text-decoration: line-through;
+}
+
+input[type=text], i {
+  width: 100%;
+  height: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+span.pay3 {
+  font-size: 12px;
+}
+
+a {
+  text-decoration: none;
+  color: #ff0909;
+}
+
+i {
+  color: #000;
+  font-size: 1em;
+}
+
+.col input[type=text]:focus {
+  background-color: white;
+  outline: none;
+}
+
+span.pay3 {
+  text-decoration: none;
+}
+
+.product-add {
+  width: 100%;
+}
+
+.show4 {
+  display: none;
+
+}
+
+.total {
+  display: flex;
+  align-items: center
+}
+
+
+@media only screen and (max-width: 800px) {
   header .xx {
-    background-color: #1b1b1b;
+    background-color: #fdfdfd;
   }
-  
-  .logo {
-    margin: 0 20px 0 20px;
-    width: 50px;
-    height: 50px;
-    background: url(/img/logo.png);
+  ul {
+    visibility: hidden;
   }
-  
-  .Rectanggle {
-    left: 10%;
-    margin: 0 20px 0 20px;
+  .logo, .Rectanggle {
+    visibility: hidden;
   }
-  
-  .bag {
-    position: absolute;
-    width: 16.13px;
-    left: 85%;
-  }
-  
   .bag .cv {
-    color: white;
+    color: black;
   }
-  
-  li {
+  img.carouselimg {
+    height: 496px;
+    width: 100%;
+  }
+  .col {
+    margin-left: 18%;
+  }
+  button.btndetail {
+    display: none;
+  }
+  .prddetailselect {
+    padding: 50px;
+  }
+  .summary4 {
+    display: none;
+  }
+  button.bttRe {
+    width: 100%;
+  }
+  .show4 {
+    display: inline-block;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-left: 25%;
+  }
+  .card{
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+  body{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .row{
     display: inline;
-    margin-right: 10px;
   }
-  
-  li.price {
-    text-decoration: line-through;
-  }
-  
-  input[type=text], i {
-    width: 100%;
-    height: 40px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-  
-  span.pay3 {
-    font-size: 12px;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #ff0909;
-  }
-  
-  i {
-    color: #000;
-    font-size: 1em;
-  }
-  
-  .col input[type=text]:focus {
-    background-color: white;
-    outline: none;
-  }
-  
-  span.pay3 {
-    text-decoration: none;
-  }
-  
-  .product-add {
-    width: 100%;
-  }
-  
-  @media only screen and (max-width: 800px) {
-    header .xx {
-      background-color: #fdfdfd;
-    }
-    ul {
-      visibility: hidden;
-    }
-    .logo, .Rectanggle {
-      visibility: hidden;
-    }
-    .bag .cv {
-      color: black;
-    }
-    img.carouselimg {
-      height: 496px;
-      width: 100%;
-    }
-    .col {
-      margin-left: 18%;
-    }
-    button.btndetail {
-      display: none;
-    }
-    .prddetailselect {
-      padding: 50px;
-    }
-    .summary4 {
-      display: none;
-    }
-    button.bttRe {
-      width: 100%;
-    }
-    .show4 {
-      display: inline-block;
-    }
-  }
+}
   /*# sourceMappingURL=style.css.map */

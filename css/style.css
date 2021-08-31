@@ -120,7 +120,11 @@ p {
   font-size: 22px;
 }
 
-@media only screen and (max-width: 768px) {
+.show4{
+  display: none;
+}
+
+@media only screen and (max-width: 769px) {
   header .xx {
     background-color: #fdfdfd;
   }
@@ -142,6 +146,28 @@ p {
     margin-left: 18%;
     /*jhfgkjhjjkj*/
   }
+
+  button.btndetail{
+    display: none;
+}
+.prddetailselect{
+  padding: 50px;
+}
+
+.summary4{
+      display: none;
+}
+button.bttRe{
+    width: 50%;
+}
+.show4{
+    display: inline-block;
+}
+.detail div{
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
 }
 
 * {
