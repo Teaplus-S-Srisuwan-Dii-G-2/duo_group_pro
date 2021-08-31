@@ -122,12 +122,86 @@ header {
 }
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
   header {
     display: none;
   }
   .container1 {
-    // margin: 0%;
+    margin-left: 0px;
+    align-content: center;
+
+    .payment {
+      display: flex;
+      flex-direction: column;
+
+      .paypal {
+        button {
+        width: 400px;
+        margin-bottom: 10px;
+        }
+      }
+
+      .credit {
+        button {
+        width: 400px;
+        margin-left: 40px;
+        margin-bottom: 10px;
+        }
+      }
+
+      .cash {
+        button {
+        width: 400px;
+        margin-left: 50px;
+        margin-bottom: 10px;
+        }
+      }
+    }
+
+    .summary {
+      display: none;
+    }
+
+    .details {
+      display: none;
+    }
+
+    .code {
+      margin-top: 30px;
+      .input-group {
+        width: 400px;
+      }
+    }
+
+    .billing {
+      p {
+        display: none;
+      }
+    }
+
+    .back {
+      .back-box {
+        display: none;
+      }
+      
+      .confirm {
+        button {
+        width: 400px;
+        margin-top: 45px;
+        margin-left: 0px;
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 1024px) {
+  header {
+    display: none;
+  }
+  .container1 {
+    // margin-left: 0px;
     align-content: center;
 
     .payment {
