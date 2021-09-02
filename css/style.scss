@@ -225,6 +225,7 @@ body {
   .size {
     width: 400px;
     height: 50px;
+    
   }
   
   .btn {
@@ -254,6 +255,29 @@ body {
       margin-left: 0%;
       margin-top: 40px;
       width: 80%;
+    }
+  }
+}
+
+@media only screen and (max-width: 411px) {
+  .border-bottom {
+    display: none;
+  }
+  .container {
+    .card {
+      width: 100%;
+      margin: 0%;
+    }
+    .detail {
+      margin-left: 0%;
+      margin-top: 40px;
+      width: 80%;
+    }
+    .size {
+      width: 300px;
+    }
+    .btn {
+      width: 300px;
     }
   }
 }
