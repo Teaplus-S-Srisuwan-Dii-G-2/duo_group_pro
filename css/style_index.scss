@@ -1,6 +1,8 @@
 .card-img-top {
   height: 300px;
   width: 270px;
+  max-width: 100%;
+  height: auto;
 }
 
 .row {
@@ -121,7 +123,9 @@ p {
 
 
 @media only screen and (max-width: 768px) {
-
+  .border-bottom {
+    display: none;
+  }
   header {
     .xx {
       background-color: rgb(253, 253, 253);
