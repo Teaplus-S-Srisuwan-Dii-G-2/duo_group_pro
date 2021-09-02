@@ -1,28 +1,40 @@
-async function getslid_show(){
+const getslid_show = async () => {
+  try {
     const response = await axios.get("https://6102d7aa79ed680017482359.mockapi.io/slider");
     console.log(response)
+    document.getElementById("slider").innerHTML = response.data
+      .map(
+        (silder) =>
+          `
     
-    document.getElementById('slid_img1').setAttribute("src", response.data[0].imageUrl)
-    document.getElementById('slid_text1').innerHTML = response.data[0].sliderText
-    
-    document.getElementById('slid_img2').setAttribute("src", response.data[1].imageUrl)
-    document.getElementById('slid_text2').innerHTML = response.data[1].sliderText
-    
-    document.getElementById('slid_img3').setAttribute("src", response.data[2].imageUrl)
-    document.getElementById('slid_text3').innerHTML = response.data[2].sliderText
-    
-    document.getElementById('slid_img4').setAttribute("src", response.data[3].imageUrl)
-    document.getElementById('slid_text4').innerHTML = response.data[3].sliderText
-}
+                    <div class="carousel-item " id="${silder.id}">
+                        <img src="${silder.imageUrl}" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5></h5>
+                            <p>${silder.sliderText}</p>
+                        </div>
+                    </div>
+      
+      `
+      )
+      .join("");
+    let ac = document.getElementById('1')
+    ac.classList.add('active')
+  } catch (e) {
+    console.log(e.message);
+  }
+};
+getslid_show();
+
 
 const getProductDetails = async () => {
-    try {
-      const response = await axios.get("https://6102d7aa79ed680017482359.mockapi.io/productlist");
-      console.log(response)
-      document.getElementById("showall").innerHTML = response.data
-        .map(
-          (product) => 
-            `
+  try {
+    const response = await axios.get("https://6102d7aa79ed680017482359.mockapi.io/productlist");
+    console.log(response)
+    document.getElementById("showall").innerHTML = response.data
+      .map(
+        (product) =>
+          `
             <div class=" col-6 col-lg-4 col-xxl-3 mb-4">
                       <div class="card">
                       <img class="picAll card-img-top" src="${product.prdImageUrl}" alt="Card image cap">
@@ -44,12 +56,12 @@ const getProductDetails = async () => {
   </div>
   </div>
           `
-        )
-        .join("");
-    } catch (e) {
-      console.log(e.message);
-    }
-  };
-  getProductDetails();
-  getslid_show();
+      )
+      .join("");
+  } catch (e) {
+    console.log(e.message);
+  }
+};
+getProductDetails();
+
 
