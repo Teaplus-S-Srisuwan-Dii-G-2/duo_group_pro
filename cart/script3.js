@@ -40,7 +40,7 @@ const getProductDetails = () => {
                   <input class="cart-quantity-input" type="number" value="1">
                 </div>
               </div>
-              <a href="/cart/page3.html" style="color: red; id="pRemove">Remove this item</a>
+              <a href="#" style="color: red onclick="removeitem(${product.id})"; >Remove this item</a>
             </div>
           </div> 
        
@@ -68,3 +68,21 @@ document.querySelector('.ttp3').textContent=totalPrice;
 document.getElementById('checkoutpay').addEventListener('click',()=>{
 localStorage.setItem('totalprice',totalPrice)
 })
+
+// let pRemove = document.createElement("a");
+// pRemove.setAttribute("href", "page3.html");
+// pRemove.textContent = "Remove this item";
+// pRemove.style.color = "red";
+// pRemove.addEventListener("click", () => {
+//   delete obj[x];
+//   localStorage.setItem("dataproduct", JSON.stringify(obj));
+//   console.log("", x);
+//   alert("re");
+// });
+
+removeitem = (id) =>{
+  delete obj[id]
+  localStorage.setItem("dataproduct",JSON.stringify(obj))
+  console.log("", x);
+  alert("re");
+}
