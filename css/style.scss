@@ -202,10 +202,15 @@ body {
 }
 
 .card {
+  img {
+    width: 730px;
+    height: 480px;
+    max-width: 100%;
+    height: auto;
+  }
   display: flex;
   justify-content: center;
-  max-width: 100%;
-  height: auto;
+
 }
 
 .detail {

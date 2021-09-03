@@ -163,6 +163,11 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.card img {
+  width: 730px;
+  height: 480px;
   max-width: 100%;
   height: auto;
 }
